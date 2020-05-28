@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="com.reacheng.simlock.provision"
+        android:sharedUserId="android.uid.phone">
+
+    <application>
+        <activity android:name="SimLockProvision"
+                android:process="com.android.phone"
+                android:excludeFromRecents="true"
+                android:theme="@style/TranslucentActivity">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>
+
